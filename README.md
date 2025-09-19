@@ -1,12 +1,14 @@
-# MNIST Digit Classifier with Deep Separable Convolutional Neural Network (DS-CNN)
+ # MNIST Digit Classifier with Deep Separable Convolutional Neural Network (DS-CNN)
 
 This project implements a Deep Separable Convolutional Neural Network (DS-CNN) for robust digit recognition on the MNIST dataset. The model is designed to efficiently learn and classify handwritten digits, demonstrating high accuracy through a carefully constructed architecture and training regimen.
+<img width="1024" height="1024" alt="Generated Image September 19, 2025 - 11_18PM" src="https://github.com/user-attachments/assets/a93ba2d9-1887-4f59-80a8-d98b813ab235" />
 
 ## Project Overview
 
 The core of this project is a PyTorch-based DS-CNN model that processes grayscale images of handwritten digits. It leverages various advanced deep learning techniques, including convolutional layers, batch normalization, activation functions, pooling, and dropout, to achieve state-of-the-art performance in digit classification.
 
 ## Model Architecture: DS_CNN
+<img width="1024" height="1024" alt="Generated Image September 19, 2025 - 11_06PM" src="https://github.com/user-attachments/assets/5b42f546-2e0a-4bb2-803a-657e241a0d0c" />
 
 The `DS_CNN` model is a sequential deep learning network built with distinct blocks for feature extraction and classification. The architecture is designed to progressively reduce spatial dimensions while increasing feature complexity, culminating in a robust classification head.
 
@@ -15,6 +17,8 @@ The `DS_CNN` model is a sequential deep learning network built with distinct blo
 Here's a breakdown of the layers and their functionalities:
 
 ### 1. Block 1: Initial Feature Extraction
+<img width="1024" height="1024" alt="Generated Image September 19, 2025 - 11_11PM (1)" src="https://github.com/user-attachments/assets/a69db8b7-bc2a-4cea-b88e-a6c403b0dec8" />
+
 
 This block focuses on extracting fundamental features from the input images.
 
@@ -46,6 +50,7 @@ This block focuses on extracting fundamental features from the input images.
 **Activation Function**: After each convolutional layer followed by batch normalization, a `nn.ReLU()` (Rectified Linear Unit) activation function is applied. ReLU introduces non-linearity, allowing the model to learn complex, non-linear relationships in the data.
 
 ### 2. Block 2: Deeper Feature Extraction
+<img width="1024" height="1024" alt="Generated Image September 19, 2025 - 11_11PM (2)" src="https://github.com/user-attachments/assets/6b45a339-da51-44f9-8e19-35e9d1f75fd0" />
 
 This block continues the process of feature learning, extracting even more abstract patterns.
 
@@ -77,6 +82,8 @@ This block continues the process of feature learning, extracting even more abstr
 **Activation Function**: `nn.ReLU()` is applied after each convolutional layer followed by batch normalization.
 
 ### 3. Block 3: Classification Head
+<img width="1024" height="1024" alt="Generated Image September 19, 2025 - 11_11PM" src="https://github.com/user-attachments/assets/ec8e3924-5417-40f5-a7e5-e01d731d4019" />
+
 
 This final block is responsible for taking the highly abstract features and classifying them into one of the 10 digit classes.
 
@@ -142,6 +149,8 @@ The project utilizes the classic MNIST dataset, consisting of handwritten digits
 The model demonstrates excellent performance on the MNIST dataset. The training logs show a consistent improvement in both training and testing accuracy over the epochs.
 
 ### Training Progress (Sample Output)
+<img width="878" height="470" alt="Screenshot 2025-09-19 233917" src="https://github.com/user-attachments/assets/6b4ccf3a-04bd-4239-a109-045bf2cd8d05" />
+
 Epoch 1: Train Acc: 92.50% (Train set: 50000), Test Acc: 98.51% (Test set: 10000)
 Epoch 2: Train Acc: 95.91% (Train set: 50000), Test Acc: 98.86% (Test set: 10000)
 Epoch 3: Train Acc: 96.38% (Train set: 50000), Test Acc: 98.53% (Test set: 10000)
@@ -162,6 +171,7 @@ Epoch 17: Train Acc: 98.74% (Train set: 50000), Test Acc: 99.58% (Test set: 1000
 Epoch 18: Train Acc: 98.80% (Train set: 50000), Test Acc: 99.57% (Test set: 10000)
 Epoch 19: Train Acc: 98.80% (Train set: 50000), Test Acc: 99.57% (Test set: 10000)
 ### Final Accuracy
+<img width="859" height="547" alt="output" src="https://github.com/user-attachments/assets/e9c47437-d99a-47c0-8567-45a992652e36" />
 
 After 19 epochs, the model achieved a remarkable **test accuracy of 99.57%** on the 10,000-image test set, with a training accuracy of 98.80% on the 50,000-image training set. This high accuracy indicates that the `DS_CNN` model effectively learned to distinguish between the different handwritten digits while generalizing well to unseen data.
 
