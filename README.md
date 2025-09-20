@@ -1,7 +1,8 @@
  # MNIST Digit Classifier with Deep Separable Convolutional Neural Network (DS-CNN)
 
 This project implements a Deep Separable Convolutional Neural Network (DS-CNN) for robust digit recognition on the MNIST dataset. The model is designed to efficiently learn and classify handwritten digits, demonstrating high accuracy through a carefully constructed architecture and training regimen.
-<img width="1024" height="1024" alt="Generated Image September 19, 2025 - 11_18PM" src="https://github.com/user-attachments/assets/a93ba2d9-1887-4f59-80a8-d98b813ab235" />
+
+<img width="1024" height="1024" alt="Generated Image September 19, 2025 - 11_18PM" src="https://github.com/user-attachments/assets/d00b8607-1824-41d8-9a6a-4ecbeae0069f" />
 
 ## Project Overview
 
